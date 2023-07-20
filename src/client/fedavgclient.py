@@ -12,6 +12,7 @@ class FedavgClient(BaseClient):
         self.args = args
         self.training_set = training_set
         self.test_set = test_set
+        print(len(self.training_set), len(self.test_set))
         
         self.optim = torch.optim.__dict__[self.args.optimizer]
         self.criterion = torch.nn.__dict__[self.args.criterion]
