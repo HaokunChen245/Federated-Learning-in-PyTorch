@@ -2,6 +2,7 @@ import os
 import shutil
 import logging
 import torchvision
+import torch
 
 logger = logging.getLogger(__name__)
 
