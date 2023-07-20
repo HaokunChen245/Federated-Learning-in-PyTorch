@@ -4,7 +4,7 @@
 ## IID split
 python3 main.py \
     --exp_name FedAvg_CIFAR10_CNN_IID --seed 42 --device cuda \
-    --dataset CIFAR10 \
+    --dataset TinyImageNet \
     --split_type iid --test_fraction 0 \
     --model_name TwoCNN --resize 24 --randhf 0.5 --randjit 0.5 --hidden_size 32 \
     --algorithm fedavg --eval_fraction 1 --eval_type both --eval_every 1 --eval_metrics acc1 acc5 \
