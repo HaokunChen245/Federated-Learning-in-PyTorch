@@ -2,7 +2,7 @@
 
 # FedAvg experiments in Figure 4, 9 of (McMahan et al., 2016)
 ## IID split
-python3 main.py \
+CUDA_VISIBLE_DEVICES=2 python3 main.py \
     --exp_name FedAvg_CIFAR10_CNN_IID --seed 42 --device cuda \
     --dataset TinyImageNet \
     --split_type iid --test_fraction 0 \
